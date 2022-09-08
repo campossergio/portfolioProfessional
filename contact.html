@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sérgio Campos</title>
+    <link rel="shortcut icon" href="node_modules/imagens/rosto_fox.png" type="image/x-png"/>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css" media="all">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/styleContact.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Barriecito|Courier+Prime|Fredoka+One|Fruktur|Indie+Flower|Lobster|M+PLUS+Rounded+1c|Modak|Montserrat+Alternates|Permanent+Marker|Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>    
+    <div class="container-fluid" id="cabecalho">
+        <div class="row">
+            <!-- IMAGEM DO CABEÇALHO -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4 mt-3">
+                        <img src="node_modules/imagens/computer.jpg" alt="Imagem de Contato" width="300" height="200" class="d-inline-block align-center rounded-circle mx-auto mt-2 d-block" id="menuPrncipal">
+                    </div>
+                    <div class="col-sm-8 col-md-8 col-lg-8 d-flex justify-content-center mb-5" id="textoLogo">
+                        <span class="d-inline-block align-center" id="menuSpan" style="color: white;">
+                            CONTATO
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MENU PRINCIPAL -->
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light navbar-thumbnail" id="menuNav">
+                    <div class="container">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSite">
+                            <ul class="nav navbar-nav ml-auto" id="nomeLinksContact">
+                                <li class="nav-item h5">
+                                    <a class="nav-link" id="menuHomeContact" href="index.html" style="color: white;">Home</a>
+                                </li>
+                                <li class="nav-item h5">
+                                    <a class="nav-link" id="menuAbout" href="about.html" style="color: white;">About</a>
+                                </li>
+                                <li class="nav-item h5">
+                                    <a class="nav-link" id="menuResume" href="resume.html" style="color: white;">Resume</a>
+                                </li>
+                                <li class="nav-item h5">
+                                    <a class="nav-link active" id="menuContact" href="#contact" style="color: black;">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-12 col-lg-6 text-center" id="contato">
+                <div class="card mt-5" id="myCard">
+                    <div class="card-header text-center" id="myCardHeader">
+                        Desenvolvedor Front-End
+                    </div>
+                    <div class="card-body text-center" id="myCardBody">
+                        "Se você está a procura de um desenvolvedor front-end com conhecimentos em Axure, 
+                        eu sou a pessoa certa para a criação do seu site com design moderno e responsivo
+                        com HTML5, CSS3, Bootstrap4, jQuery e JavaScript deixando seu layout conforme projetado e
+                        mantendo a mesma visibilidade em diversos dispositivos."
+                    </div>
+                    <div class="card-text text-center">
+                       <i class="fa fa-send" style="color: rgb(243, 109, 109)"></i> Email: sermarcia@hotmail.com                         
+                    </div>
+                    <div class="card-text text-center">
+                        <i class="fa fa-whatsapp" style="color: green"></i>WhatsApp: 16 99268-7141
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-12 col-lg-6" id="fundoForm">
+                <div class="col-sm-12 col-md-12 col-lg-6"  id="myForm">
+
+                    <form action="https://formspree.io/sermarcia@hotmail.com" method="POST">
+                        <div class="col-12 mt-5" id="txtLabel">
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" class="form-control" placeholder="Enter Name" name="nome" id="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" placeholder="Enter Email" name="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="textArea">Mensagem</label>
+                                <textarea class="form-control" rows="6" id="comment" name="comment" placeholder="Deixe seu contato e endereço para agendar uma entrevista comigo" required></textarea>
+                            </div>
+                            <button class="btn mb-2" id="botaoEnviar" type="submit">
+                                Enviar
+                            </button>
+                        </div>
+                    </form>                    
+                    
+                </div> 
+            </div>           
+        </div>
+    </div>
+
+    <!-- ÍCONES DO FOOTER COM LINKS PARA REDES SOCIAIS E GIF -->
+    <div class="container-fluid" id="footer">
+        
+        <div class="row">
+            <div class="col-12 text-center mt-5 mb-3" id="footerContact">
+                <h2 id="textoFooter">Sérgio Campos - FOXK13IT TECNOLOGIA &amp; INOVAÇÃO &reg;</h2>
+                <a href="https://www.facebook.com/sergio.campos.779" class="fa fa-facebook mx-auto inline-block" target="_blank"></a>
+                <a href="https://twitter.com/sergioC37502341" class="fa fa-twitter mx-auto inline-block" target="_blank"></a>
+                <a href="https://wwww.linkedin.com/in/sergiocamposti/" class="fa fa-linkedin mx-auto inline-block" target="_blank"></a>
+                <a href="https://github.com/campossergio" class="fa fa-github mx-auto inline-block" target="_blank"></a>
+                <a href="https://www.instagram.com/sergiocamposk13" class="fa fa-instagram mx-auto inline-block" target="_blank"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 mt-3 mb-5">
+                <img src="node_modules/imagens/logotipo_portfolio.png" alt="Imagem DEV" class="mx-auto d-block" id="imgFooter">
+            </div>
+        </div>
+    </div>
+    
+    <!-- ARQUIVOS JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/js/jsContact.js"></script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <!--<script src="./dadosForm.php"></script>-->
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sérgio Campos</title>
+    <link rel="shortcut icon" href="node_modules/imagens/rosto_fox.png" type="image/x-png"/>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css" media="all">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/styleResume.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="node_modules/chart.js/dist/Chart.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Barriecito|Courier+Prime|Fredoka+One|Indie+Flower|Modak|M+PLUS+Rounded+1c|Montserrat+Alternates|Permanent+Marker|Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="temaFundoResume">
+    <!-- IMAGEM DO CABEÇALHO -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">                
+                <img src="node_modules/imagens/brain03.jpg" alt="Imagem do Cabeçalho" width="300" height="200" class="d-inline-block align-center rounded-circle mx-auto d-block" id="menuPrincipal">
+            </div>
+            <div class="col-sm-8 col-md-8 col-lg-4 d-flex justify-content-center mb-5" id="textoLogo">
+                <span class="d-inline-block align-center" id="menuSpanResume">CURRíCULO</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU PRINCIPAL -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-thumbnail" id="menuNav">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSite">
+                    <ul class="nav navbar-nav ml-auto" id="nomeLinksResume" >
+                        <li class="nav-item h5">
+                            <a class="nav-link" id="menuHomeResume" href="index.html" style="color: aliceblue;">Home</a>
+                        </li>
+                        <li class="nav-item h5">
+                            <a class="nav-link" id="menuAbout" href="about.html" style="color: aliceblue;">About</a>
+                        </li>
+                        <li class="nav-item h5">
+                            <a class="nav-link active" id="menuResume" href="#resume">Resume</a>
+                        </li>
+                        <li class="nav-item h5">
+                            <a class="nav-link" id="menuContact" href="contact.html" style="color: aliceblue;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- CURRÍCULO -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-2">
+                <div id="accordion">
+                    <!-- PERFIL / PROFILE -->
+                    <div class="card mb-2">
+                        <div class="card-header text-center ">
+                            <button id="btn_head" type="button" class="card-link btn btn-primary btn-block" data-toggle="collapse" href="#collapseOne">
+                                Perfil
+                            </button>
+                        </div> 
+                        <div id="collapseOne" class="collapse show text-justify" data-parent="#accordion">
+                            <div class="card-body" id="text_information">
+                                Bacharel em Sistemas de Informação e cursando Engenharia de Computação, com experiência em desenvolvimento de aplicações web utilizando HTML5, CSS3, Javascript, Bootstrap3, Photoshop,
+                                MySQL, Office 2016, Scrum.
+                            </div>
+                        </div>                       
+                    </div>
+                    <!-- OBJETIVO / OBJECTIVE -->
+                    <div class="card mb-2">
+                        <div class="card-header text-center">
+                            <button id="btn_head" class="collapsed card-link btn btn-primary btn-block" type="button" data-toggle="collapse" href="#collapseTwo">
+                                Objetivo
+                            </button>
+                        </div>
+                        <div class="collapse text-justify" id="collapseTwo" data-parent="#accordion">
+                            <div class="card-body" id="text_information">
+                                Em busca de uma oportunidade para desenvolver e melhorar meus conhecimentos, e também algo que possa me instruir de forma crescente e contínua, visando sempre o crescimento entre eu e a empresa.
+                            </div>  
+                        </div>
+                    </div>
+                    <!-- FORMAÇÃO / DEGREE -->
+                    <div class="card mb-2">
+                        <div class="card-header text-center">
+                            <button id="btn_head" class="collapsed card-link btn btn-primary btn-block" type="button" data-toggle="collapse" href="#collapseThree">
+                                Formação
+                            </button>
+                        </div>
+                        <div class="collapse text-justify" id="collapseThree" data-parent="#accordion">
+                            <div class="card-body" id="text_information">
+                                <ul class="formacao" id="text_information">
+                                    <li>                             
+                                        <strong>UNIVESP – UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO</strong><br>
+                                        <strong>BACHAREL EM ENGENHARIA DE COMPUTAÇÃO</strong><br>
+                                        2018 – 2022 cursando <br>
+                                    </li>
+                                    <li>
+                                        <strong>UNINOVE – UNIVERSIDADE NOVE DE JULHO</strong><br>
+                                        <strong>BACHAREL EM SISTEMAS DE INFORMAÇÃO</strong><br>
+                                        2011 – 2015 concluído
+                                    </li>                               
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EXPERIÊNCIA PROFISSIONAL -->
+                    <div class="card mb-2">
+                        <div class="card-header text-center">
+                            <button id="btn_head" class="collapsed card-link btn btn-primary btn-block" type="button" data-toggle="collapse" href="#collapseFour">
+                                Experiência Profissional
+                            </button>
+                        </div>
+                        <div class="collapse text-justify" id="collapseFour" data-parent="#accordion">
+                            <div class="card-body" id="text_information">
+                                <!--<pre id="text_information">-->
+                                    <strong>GRUPO VIP - AUXILIAR ADMINISTRATIVO</strong><br>
+                                    05/2018 – 08/2019 <br>
+                                    Execução de serviços administrativos para a gestão dos recursos humanos da empresa, processos de contratação e demissão e no desenvolvimento de atividades com o quadro de colaboradores, acompanhamento de desempenho, adaptação e resultados alcançados dentro da função exercidas pelos colaboradores, gestão de estoque. <br>
+                                    <br><strong>EMBRAER S/A - ESTAGIÁRIO ENGENHARIA DE SISTEMAS</strong><br>
+                                    02/2017 – 12/2017 <br>
+                                    Desenvolvimento de sistemas web para auxiliar os engenheiros na campanha de ensaios de voo do KC-390 para agilizar processos e centralizar informações através de indicadores que demonstram diferentes processos, facilitando identificar possíveis adversidades que possam atrapalhar na certificação da aeronave. <br>
+                                    <br><strong>ART DESIGN GRÁFICA E EDITORA - IMPRESSOR DE OFFSET</strong><br>
+                                    07/2008 – 11/2016 <br>
+                                    Responsável pela impressão e produção de material gráfico e gestão de estoque. <br>
+                               <!-- </pre> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CERTIFICAÇÕES / CERTIFICATION -->
+                    <div class="card mb-2">
+                        <div class="card-header text-center">
+                            <button id="btn_head" class="collapsed card-link btn btn-primary btn-block" type="button" id="btn_head" data-toggle="collapse" href="#collapseFive">
+                                Certificação
+                            </button>
+                        </div>
+                        <div class="collapse text-justify" id="collapseFive" data-parent="#accordion">
+                            <div class="card-body" id="text_information">
+                                <p><strong>SFC - Scrum Fundamental Certified</strong></p>
+                                <img class="img-fluid" src="node_modules/imagens/certificado_sfc_sc.jpg" alt="Certificado Scrum SFC">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HABILIDADES / SKILLS -->
+                    <div class="card mb-2">
+                        <div class="card-header tex-center">
+                            <button id="btn_head" class="collapsed card-link btn btn-primary btn-block" type="button" id="btn_head" href="#collapseSix">
+                                SKILLS
+                            </button>
+                        </div>
+                        <div class="card-body" id="text_information">
+                            <canvas class="line-chart">
+
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ICONES DO FOOTER COM LINKS PARA REDES SOCIAIS E GIF -->
+    <footer class="footer navbar-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mt-5" id="linkFooter">
+                    <h2 id="textoFooter">Sérgio Campos - FOXK13IT TECNOLOGIA &amp; INOVAÇÃO &reg;</h2>
+                    <a href="https://www.facebook.com/sergio.campos.779" class="fa fa-facebook mx-auto inline-block" target="_blank"></a>
+                    <a href="https://twitter.com/sergioC37502341" class="fa fa-twitter mx-auto inline-block" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/sergiocamposti/" class="fa fa-linkedin mx-auto inline-block" target="_blank"></a>
+                    <a href="https://github.com/campossergio" class="fa fa-github mx-auto inline-block" target="_blank"></a>
+                    <a href="https://www.instagram.com/sergiocamposk13/" class="fa fa-instagram mx-auto inline-block" target="_blank"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-3 mb-3">
+                    <img src="node_modules/gif/dev.gif" alt="Imagem DEV" class="mx-auto d-block" id="imgFooter" width="300" height="200">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ARQUIVOS JS -->    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/js/jsResume.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="node_modules/js/grafico.js"></script>
+</body>
+</html>
